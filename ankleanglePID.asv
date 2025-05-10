@@ -1,0 +1,19 @@
+
+robot_data = load('d'); % Load robot data
+
+
+
+time_robot = linspace(0, 1.5, length(robot_data)); % Time vector for robot data
+
+% Plot the two datasets
+figure;
+hold on;
+plot(time_robot, robot_data, 'r-', 'LineWidth', 2); % Plot robot data (red solid line)
+
+% Add labels, title, and legend
+title(' Robot Data');
+xlabel('Time [s]');
+ylabel('Angle (Degree)');
+legend( 'Robot Data');
+grid on;
+hold off;
